@@ -157,8 +157,8 @@ function Index() {
                 <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Now creating</p>
                 <p className="mt-2 font-display text-2xl">Stories in motion.</p>
               </div>
-              <div className="glass-panel absolute right-1 top-20 hidden w-44 p-5 text-right sm:block md:right-10">
-                <p className="font-display text-5xl text-primary">12+</p>
+              <div className="glass-panel absolute right-1 top-20 w-28 p-3 text-right sm:w-44 sm:p-5 md:right-10">
+                <p className="font-display text-4xl text-primary sm:text-5xl">12+</p>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Years of craft</p>
               </div>
               <div className="glass-panel absolute bottom-16 left-3 flex items-center gap-3 px-4 py-3 sm:left-[8%]">
@@ -248,9 +248,9 @@ function Index() {
                   <div className="relative overflow-hidden">
                     <img src={project.image} width={1280} height={800} loading="lazy" alt={project.alt} className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
-                    <button type="button" aria-label={`Play ${project.title}`} className="absolute left-1/2 top-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-foreground/30 bg-background/50 text-foreground backdrop-blur-md transition group-hover:scale-110 group-hover:border-primary group-hover:text-primary">
+                    <Button type="button" variant="outline" size="icon" aria-label={`Play ${project.title}`} className="absolute left-1/2 top-1/2 size-14 -translate-x-1/2 -translate-y-1/2 rounded-full border-foreground/30 bg-background/50 text-foreground backdrop-blur-md transition group-hover:scale-110 group-hover:border-primary group-hover:text-primary">
                       <Play className="ml-0.5 size-5 fill-current" />
-                    </button>
+                    </Button>
                   </div>
                   <div className="flex items-end justify-between border-t border-border p-5">
                     <div><p className="text-[10px] uppercase tracking-[0.18em] text-primary">{project.category}</p><h3 className="mt-2 text-sm font-semibold">{project.title}</h3></div>
